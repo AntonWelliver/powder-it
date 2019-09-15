@@ -13,7 +13,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    animation: fadein 6s;
+    animation: fadein 1s;
     
 
 }
@@ -96,6 +96,11 @@ img{
     position: relative;
     
 }
+/*animation for video zoom on page load*/
+@keyframes videozoom {
+from{transform: scale(2);}
+to{transform: scale(1);}
+}
 
 .hero video {
     filter: blur(10px);
@@ -105,14 +110,15 @@ img{
     width: 100%;
     position: fixed;
     z-index: -1000;
+    animation: videozoom 4s both;
 
     
 }
 
 @keyframes in {
     0%{transform: scale(0.7);}
-40%{transform: scale(1.2);}
-    100%{transform: scale(1.1);}
+30%{transform: scale(1.1);}
+    100%{transform: scale(1.0);}
 }
 @keyframes hover {
     0% {
@@ -144,7 +150,7 @@ font-size: 72px;
 text-shadow: 0 0 20px rgb(255, 255, 255);
 font-family: 'Montserrat', sans-serif;
 z-index: -100;
-animation: in 4s forwards;
+animation: in 2s forwards;
 }
 
 @keyframes colors {
