@@ -153,7 +153,7 @@ animation: in 4s forwards;
     20%{color: magenta;text-shadow: 0 0 15px magenta;}
     30%{color: rgb(5, 80, 165);text-shadow: 0 0 15px rgb(5, 80, 165);}
     40%{color: turquoise;text-shadow: 0 0 15px turquoise;}
-    50%{color: rgb(0, 0, 0); text-shadow: 0 0 15px rgb(0, 0, 0);}
+    50%{color: rgb(0, 0, 0);} 
     60%{color: rgb(255, 251, 0);text-shadow: 0 0 15px rgb(255, 251, 0);}
     70%{color: rgb(128, 0, 0);text-shadow: 0 0 15px rgb(128, 0, 0);}
     80%{color: red;text-shadow: 0 0 15px red;} 
