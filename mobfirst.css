@@ -151,6 +151,25 @@ z-index: -100;
 animation: in 4s forwards;
 }
 
+@keyframes colors {
+    0%{color: rgb(0, 255, 255); text-shadow: 0 0 15px rgb(0, 255, 255);}
+    10%{color: rgb(255, 0, 128); text-shadow: 0 0 15px rgb(255, 0, 128);}
+    20%{color: magenta;text-shadow: 0 0 15px magenta;}
+    30%{color: rgb(5, 80, 165);text-shadow: 0 0 15px rgb(5, 80, 165);}
+    40%{color: turquoise;text-shadow: 0 0 15px turquoise;}
+    50%{color: rgb(0, 0, 0); text-shadow: 0 0 15px rgb(0, 0, 0);}
+    60%{color: rgb(255, 251, 0);text-shadow: 0 0 15px rgb(255, 251, 0);}
+    70%{color: rgb(128, 0, 0);text-shadow: 0 0 15px rgb(128, 0, 0);}
+    80%{color: red;text-shadow: 0 0 15px red;} 
+    90%{color: lawngreen;text-shadow: 0 0 15px lawngreen;}
+    100%{color: rgb(0, 255, 255);text-shadow: 0 0 15px rgb(0, 255, 255);}
+}
+
+.hero h1::after {
+    content: "IT";
+    animation: colors 15s both linear infinite;
+}
+
 
 @keyframes hop {
     0%{transform: translate(0, 0)}
