@@ -1,0 +1,204 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+@keyframes fadein {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    animation: fadein 6s;
+    
+
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    position: fixed;
+    grid-gap: 10px;
+    right: 10px;
+    left: 10px;
+    top: 20px;
+    width: auto;
+    z-index: 1000;
+    
+    
+}
+
+.option1 {
+background-color: rgba(226, 226, 226, 0.384);
+backdrop-filter: blur(4px);
+border-radius: 30px;
+margin-left: 10px;
+
+}
+
+.option2 {
+    background-color: rgba(226, 226, 226, 0.384);
+    backdrop-filter: blur(4px);
+    border-radius: 30px;}
+
+.option3 {
+    background-color: rgba(226, 226, 226, 0.384);
+    backdrop-filter: blur(4px);
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.header p {
+/*margin: 0;*/
+text-align: center;
+line-height: 40px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 25px;
+
+}
+
+a {
+text-decoration: none;
+color: white;
+
+}
+
+.content {
+    display: grid;
+    size: 100%;
+    overflow: hidden;
+    position: relative;
+    grid-template-rows: 100vh;
+       
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+
+
+    }
+
+    .hero::before
+    {
+        content: "";
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.384);
+       
+    }
+    
+.hero {
+    width: 100vw;
+    position: relative;
+    
+}
+
+.hero video {
+    filter: blur(10px);
+    margin: 0 auto;
+    object-fit: cover;
+    height: 100vh;   
+    width: 100%;
+    position: fixed;
+    z-index: -1000;
+
+    
+}
+
+@keyframes in {
+    0%{transform: scale(0.7);}
+40%{transform: scale(1.2);}
+    100%{transform: scale(1.1);}
+}
+@keyframes hover {
+    0% {
+		transform: translate(0%,0%);	
+	}
+	25% {
+		transform: translate(5%,15%);	
+	}	
+	50% {
+		transform: translate(10%,5%);	
+	}	
+	75% {
+		transform: translate(0%,15%);	
+	}	
+	100% {
+		transform: translate(0%,0%);
+	}		
+    
+}
+
+.hero h1 {
+position: fixed;
+color: rgba(255, 255, 255, 0.801);
+top: 32vh;
+width: 100%;
+text-align: center;
+background-clip: text;
+font-size: 72px;
+text-shadow: 0 0 20px rgb(255, 255, 255);
+font-family: 'Montserrat', sans-serif;
+z-index: -100;
+animation: in 4s forwards;
+}
+
+
+@keyframes hop {
+    0%{transform: translate(0, 0)}
+    /*20%{transform: translate(0, 200px)}
+    80%{transform: translate(0, -32px)}*/
+   100%{transform: translate(0, -50px)}
+}
+
+
+.contentlow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    box-shadow: 0 -20px 50px rgb(0, 0, 0);
+    background-color: black;
+    
+}
+
+.cell1 {
+    height: 400px;
+    background-image: url(https://s0.2mdn.net/8278829/09022019-080059961-mayansmc_s02_streamnow_programmatic_300x600_v1.jpg);
+    background-position: center;
+    position: relative;
+    z-index: 30;
+}
+
+.cell2 {
+    height: 400px;
+    background-image: url(https://www.medicalnewstoday.com/content//images/articles/322/322868/golden-retriever-puppy.jpg);
+    background-position: center;
+    background-size: cover;  
+    position: relative;
+    z-index: 30;
+}
+
+.cell3 {
+    height: 400px;
+    background-image: url(https://i.ytimg.com/vi/7NYaGOyJiCY/maxresdefault.jpg);
+    background-position: center;
+    background-size: cover;    
+    position: relative;
+    z-index: 30;
+}
+
+.cell4 {
+    height: 400px;
+    background-image: url(https://s0.2mdn.net/8278829/09022019-080059961-mayansmc_s02_streamnow_programmatic_300x600_v1.jpg);
+    background-position: center;
+    position: relative;
+    z-index: 30;
+}
+
