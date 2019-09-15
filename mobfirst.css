@@ -179,12 +179,18 @@ animation: in 4s forwards;
 }
 
 
-.contentlow {
+.contentLow {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     box-shadow: 0 -20px 50px rgb(0, 0, 0);
     background-color: black;
-    
+}
+
+.middleContent {
+    display: grid;
+    box-shadow: 0 -20px 50px rgb(0, 0, 0);
+    background-color: white;
+    color: black;
 }
 
 .cell1 {
