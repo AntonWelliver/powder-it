@@ -28,28 +28,24 @@ body {
     top: 20px;
     width: auto;
     z-index: 1000;
-    
-    
 }
 
-.option1 {
-background-color: rgba(226, 226, 226, 0.384);
-backdrop-filter: blur(4px);
-border-radius: 30px;
-margin-left: 10px;
+a.buttonLeft {
+    margin-left: 10px;
 }
 
-.option2 {
-    background-color: rgba(226, 226, 226, 0.384);
-    backdrop-filter: blur(4px);
-    border-radius: 30px;}
-
-.option3 {
+a.button {
     background-color: rgba(226, 226, 226, 0.384);
     backdrop-filter: blur(4px);
     border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+a.buttonRight {
     margin-right: 10px;
 }
+
 .header p {
 /*margin: 0;*/
 text-align: center;
