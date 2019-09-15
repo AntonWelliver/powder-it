@@ -13,7 +13,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    animation: fadein 1s;
+    animation: fadein 3s;
     
 
 }
@@ -22,7 +22,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     position: fixed;
-    grid-gap: 10px;
+    grid-gap: 20px;
     right: 10px;
     left: 10px;
     top: 20px;
@@ -40,6 +40,13 @@ a.button {
     border-radius: 30px;
     border: none;
     outline: none;
+    transition: .35s;
+    
+}
+
+a.button:hover {
+    transform: scale(1.04);
+    transition: .35s;
 }
 
 a.buttonRight {
@@ -98,8 +105,9 @@ img{
 }
 /*animation for video zoom on page load*/
 @keyframes videozoom {
-from{transform: scale(2);}
-to{transform: scale(1);}
+from{transform: scale(1.5);}
+50%{transform: scale(1.09);}
+to{transform: scale(1.1);}
 }
 
 .hero video {
@@ -110,14 +118,14 @@ to{transform: scale(1);}
     width: 100%;
     position: fixed;
     z-index: -1000;
-    animation: videozoom 4s both;
+    animation: videozoom 3s both;
 
     
 }
 
 @keyframes in {
     0%{transform: scale(0.7);}
-30%{transform: scale(1.1);}
+50%{transform: scale(1.07);}
     100%{transform: scale(1.0);}
 }
 @keyframes hover {
@@ -150,7 +158,7 @@ font-size: 72px;
 text-shadow: 0 0 20px rgb(255, 255, 255);
 font-family: 'Montserrat', sans-serif;
 z-index: -100;
-animation: in 2s forwards;
+animation: in 3s forwards ease-in-out;
 }
 
 @keyframes colors {
