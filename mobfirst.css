@@ -164,10 +164,10 @@ animation: in 3s forwards ease-in-out;
 @keyframes colors {
     0%{color: rgb(0, 255, 255); text-shadow: 0 0 15px rgb(0, 255, 255);}
     10%{color: rgb(255, 0, 128); text-shadow: 0 0 15px rgb(255, 0, 128);}
-    20%{color: magenta;text-shadow: 0 0 15px magenta;}
-    30%{color: rgb(5, 80, 165);text-shadow: 0 0 15px rgb(5, 80, 165);}
+    20%{color: darkorange;text-shadow: 0 0 15px darkorange;}
+    30%{color: magenta;text-shadow: 0 0 15px magenta;}
     40%{color: turquoise;text-shadow: 0 0 15px turquoise;}
-    50%{color: rgb(0, 0, 0);} 
+    50%{color: rgb(0, 0, 0); text-shadow: 0 0 0 black;} 
     60%{color: rgb(255, 251, 0);text-shadow: 0 0 15px rgb(255, 251, 0);}
     70%{color: rgb(128, 0, 0);text-shadow: 0 0 15px rgb(128, 0, 0);}
     80%{color: red;text-shadow: 0 0 15px red;} 
@@ -177,7 +177,7 @@ animation: in 3s forwards ease-in-out;
 
 .hero h1::after {
     content: "IT";
-    animation: colors 15s both linear infinite;
+    animation: colors 23s both linear infinite;
 }
 
 
