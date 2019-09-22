@@ -121,9 +121,7 @@ to{transform: scale(1.1);}
     width: 100%;
     position: fixed;
     z-index: -1000;
-    animation: videozoom 3s both;
-
-    
+    animation: videozoom 3s both; 
 }
 
 @keyframes in {
@@ -200,10 +198,36 @@ animation: in 3s forwards ease-in-out;
 }
 
 .middleContent {
-    display: grid;
-    box-shadow: 0 -20px 50px rgb(0, 0, 0);
     background-color: white;
-    color: black;
+    margin: 0px;
+    height: 100%;
+    position: relative;   
+    padding: 10vh 0;
+    min-height: 300px;
+}
+
+.middleContent h1, .middleContent p, .middleContent a{
+    margin: 0px 10%;
+  
+}
+
+@keyframes bluefade{
+    0%{background-color: rgb(191, 241, 253);}
+    33%{background-color: rgb(110, 189, 253);}
+    66%{background-color: rgb(184, 207, 255);}
+    100%{background-color: rgb(191, 241, 253);}
+}
+
+#middleContent1 {
+    background-color: #1E1E1E;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 -8px 40px rgba(34, 34, 34, 0.829);
+}
+
+#middleContent1 a{
+    color: #ff0059;
+    font-weight: bold;
 }
 
 .cell1 {
