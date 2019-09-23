@@ -57,7 +57,7 @@ a.buttonRight {
 }
 
 .header p {
-/*margin: 0;*/
+margin: 10px;
 text-align: center;
 line-height: 40px;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -122,6 +122,30 @@ to{transform: scale(1.1);}
     position: fixed;
     z-index: -1000;
     animation: videozoom 3s both; 
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: red;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    justify-items: center;
+}
+
+.hero a {
+    background-image: url(./media/arrow.svg);
+    background-color: blue;
+    height: 300px;
+    width: auto;
+    
+    left: auto;
+    right: auto;
+    background-size: cover;
+    background-position: center;
+    top: 80vh;
+    
 }
 
 @keyframes in {
@@ -195,6 +219,7 @@ animation: in 3s forwards ease-in-out;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     box-shadow: 0 -20px 50px rgb(0, 0, 0);
     background-color: black;
+    
 }
 
 .middleContent {
